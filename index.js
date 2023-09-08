@@ -27,6 +27,9 @@ app.use("/api", (req, res) => {
     current_day: dayNames[day],
     utc_time,
     track: track,
+    github_file_url:
+      "https://github.com/Fasasifoyin/firstTask/blob/main/index.js",
+    github_repo_url: "https://github.com/Fasasifoyin/firstTask",
     status_code: 200,
   };
 
