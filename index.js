@@ -20,7 +20,7 @@ app.use("/api", (req, res) => {
   ];
   const date = new Date();
   const day = date.getDay();
-  const utc_time = date.toISOString();
+  const utc_time = date.toISOString().split('.')[0]+"Z" ;
 
   const result = {
     slack_name: slack_name,
